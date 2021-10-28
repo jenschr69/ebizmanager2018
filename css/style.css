@@ -1,0 +1,296 @@
+* { box-sizing: border-box; }
+
+body { 
+  font-family: arial, sans-serif; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.container {
+  max-width: 1240px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  border-bottom: 1px;
+  border-color: gray;
+}
+
+/*---- Global navigation ----*/
+.globalnav {
+  background-color: darkgrey;
+  color: white;
+}
+
+nav.bg-dark {
+  background-color: black !important;
+}
+
+.nav-item-link {
+  color: white;
+}
+
+.sectionnav {
+  background-color:darkgray;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Nav Unvisited link */
+.nav-item a:link {
+  color: white;
+}
+
+/* Nav Visited link */
+.nav-item a:visited {
+  color: white;
+}
+
+/* Nav mouse over link */
+.nav-item-link a:hover {
+  color: white;
+}
+
+/* Nav selected link */
+.nav-item-link a:active {
+  color: white;
+}
+
+
+/* ---- grid ---- */
+.maincontainer {
+  max-width: 1230px;
+  margin: auto;
+}
+
+.grid {
+  border: 1px black;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 300px;
+  float: left;
+  background: white;
+  /*padding: 5px;*/
+  margin-bottom: 1em;
+}
+
+.grid-item:before {
+  display: block;
+  color: white;
+  padding-top: 0.2em;
+  font-size: 1.0rem;
+}
+
+/* ---- grid text ---- */
+.article {
+  padding-top: 0.5rem;
+}
+
+.linkblockheadline {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding-left: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.linktext {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+}
+
+.se-col {
+  color: #006AA7;
+}
+
+.no-col {
+  color: darkblue;
+}
+
+.da-col {
+  color: #C60C30;
+}
+
+.int-col {
+  color: black;
+}
+
+
+
+/* ---- Footer ---- */
+
+/* unvisited link */
+footer a:link {
+  color: white;
+}
+
+/* visited link */
+footer a:visited {
+  color: white;
+}
+
+/* mouse over link */
+footer a:hover {
+  color: darkgrey;
+}
+
+/* selected link */
+footer a:active {
+  color: white;
+}
+
+footer.p {
+  margin-bottom: 0rem;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  max-width: 1200px;
+  margin-top: 0.5rem;
+  padding: 10px 10px 10px 10px;
+}
+
+
+/* Media breakpoints */
+@media only screen and (max-width:650px) {
+  header {
+    width: 300px;
+    margin: auto;
+  }
+
+  nav {
+    width: 300px;
+    margin: auto;
+  }
+
+  .sectionnav {
+    width: 300px;
+    margin: auto;
+  }
+
+  .grid {
+    width: 300px;
+    margin: auto;
+  }
+
+  .footer {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width:930px) and (min-width: 651px) {
+  header {
+    width: 590px;
+    margin: auto;
+  }
+
+  nav {
+    width: 590px;
+    margin: auto;
+  }
+
+  .sectionnav {
+    width: 590px;
+    margin: auto;
+  }
+
+  .grid {
+    width: 600px;
+    margin: auto;
+  }   
+  
+  .grid-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer {
+    width: 590px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width:1230px) and (min-width: 931px) {
+  header {
+    width: 890px;
+    margin: auto;
+  }
+
+  nav {
+    width: 890px;
+    margin: auto;
+  }
+
+  .sectionnav {
+    width: 890px;
+    margin: auto;
+  }
+
+  .grid {
+    width: 900px;
+    margin: auto;
+  }   
+  
+  .grid-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer {
+    width: 890px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1231px) {
+  header {
+    width: 1190px;
+    margin: auto;
+  }
+
+  nav {
+    width: 1190px;
+    margin: auto;
+  }
+
+  .sectionnav {
+    width: 1190px;
+    margin: auto;
+  }
+
+  .grid {
+    width: 1240px;
+    margin: auto;
+  }   
+  
+  .grid-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer {
+    width: 1190px;
+    margin: auto;
+  }
+}
